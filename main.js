@@ -170,3 +170,13 @@ jQuery(window).on('load', function () {
 
     }
 });
+
+
+let addButton = document.getElementsByClassName("dish-add-btn");
+let cartNumber = document.getElementsByClassName("cart-number");
+let count = 0;
+function addToCart(){
+    count++;
+    cartNumber[0].innerHTML = count;
+    console.log(cartNumber);
+}
